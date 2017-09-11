@@ -16,11 +16,15 @@ public class BotListener extends ListenerAdapter {
         switch (content){
             case "!info" :
                 channel.sendMessage("Bonjour, je suis ImagiBot, je comprends plusieurs commandes qui sont les suivantes : \n" +
-                        " !git : donne accès à mon code pour me modifier \n" +
+                        "\t!git : donne accès à mon code pour me modifier \n" +
+                        "\t!planning : donne le planning du semestre\n" +
                         "TODO").queue();
                 break;
             case "!git" :
                 channel.sendMessage("Mes sources : https://github.com/JJandot/ImaginaBot").queue();
+                break;
+            case "!planning" :
+                channel.sendMessage("Le planning : http://julienjandot.alwaysdata.net/planning/").queue();
                 break;
         }
     }
