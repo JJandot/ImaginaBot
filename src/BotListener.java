@@ -14,13 +14,14 @@ public class BotListener extends ListenerAdapter {
         String content = message.getRawContent();
         MessageChannel channel = event.getChannel();
         switch (content){
-            case "!info :" :
+            case "!info" :
                 channel.sendMessage("Bonjour, je suis ImagiBot, je comprends plusieurs commandes qui sont les suivantes : \n" +
                         " !git : donne accès à mon code pour me modifier /n" +
                         "TODO").queue();
                 break;
             case "!git" :
                 channel.sendMessage("Mes sources : https://github.com/JJandot/ImaginaBot").queue();
+                break;
         }
     }
 }
