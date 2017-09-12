@@ -1,5 +1,7 @@
 import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.MessageChannel;
+import net.dv8tion.jda.core.entities.impl.UserImpl;
+import net.dv8tion.jda.core.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
@@ -27,5 +29,13 @@ public class BotListener extends ListenerAdapter {
                 channel.sendMessage("Le planning : http://julienjandot.alwaysdata.net/planning/").queue();
                 break;
         }
+    }
+
+    @Override
+    public void onGuildMemberJoin(GuildMemberJoinEvent event) {
+        UserImpl user = (UserImpl) event.getUser();
+        if(!user.hasPrivateChannel())
+            user.openPrivateChannel().complete();
+        user.getPrivateChannel().sendMessage("Merci d'utiliser ton nom et prénom réel sur ce Discord").queue();
     }
 }
