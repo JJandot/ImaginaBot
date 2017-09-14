@@ -20,6 +20,7 @@ public class BotListener extends ListenerAdapter {
                 channel.sendMessage("Bonjour, je suis ImagiBot, je comprends plusieurs commandes qui sont les suivantes : \n" +
                         "\t!git : donne accès à mon code pour me modifier \n" +
                         "\t!planning : donne le planning du semestre\n" +
+                        "\t!cours : donne le lien vers les supports de cours" +
                         "TODO").queue();
                 break;
             case "!git" :
