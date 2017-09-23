@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ImaginaBot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ImaginaBot_jar</output-path>
+    <root id="archive" name="ImaginaBot.jar">
+      <element id="module-output" name="ImaginaBot" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/JDA-3.3.0_260-withDependencies.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

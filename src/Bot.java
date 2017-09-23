@@ -19,11 +19,4 @@ public class Bot {
         }
         System.out.println("Connecté avec : " + jda.getSelfUser().getName());
     }
-
-    public static void main(String[] args) {
-        if(args.length != 1)
-            System.out.println("Erreur token");
-        else
-            new Bot(args[0]);
-    }
 }
