@@ -35,6 +35,7 @@ public class BotListener extends ListenerAdapter {
                         "\tIngénierie logicielle : http://www.lirmm.fr/~dony/enseig/IL/index.html\n" +
                         "\tRéseaux et communication : https://moodle.umontpellier.fr/course/view.php?id=675\n" +
                         "\tIHM : http://www.lirmm.fr/~mountaz/Ens/Ihm/\n" +
+                        "\tIHM : http://www.lirmm.fr/~mountaz/Ens/Ihm/Papers/\n" +
                         "\tProgrammation orientée agents : http://www.lirmm.fr/~ferber/ProgAgent/index.html\n" +
                         "\tTraitement du signal : https://www.lirmm.fr/~wpuech/enseignement/master_informatique/Traitement_Transmission_Signal/").queue();
         }
